@@ -26,7 +26,7 @@ public class InterruptDemo {
         busyThread.start();
 
         sleepThread.interrupt();
-
+        //死循环无法中断
         busyThread.interrupt();
 
         while (sleepThread.isInterrupted()) ;

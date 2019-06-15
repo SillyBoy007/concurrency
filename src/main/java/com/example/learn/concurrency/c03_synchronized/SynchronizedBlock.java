@@ -1,7 +1,5 @@
 package com.example.learn.concurrency.c03_synchronized;
 
-import java.util.concurrent.locks.Lock;
-
 public class SynchronizedBlock implements Runnable {
     static SynchronizedBlock instance=new SynchronizedBlock();
 
