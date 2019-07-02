@@ -4,7 +4,7 @@ package com.example.learn.concurrency.c04_volatile;
  * 使用synchronized保证原子性
  */
 public class SynchronizedVolatileTest {
-    public  int inc = 0;
+    public volatile int inc = 0;
 
     public synchronized void increase() {
         inc++;
