@@ -5,7 +5,7 @@ import java.util.concurrent.Semaphore;
 /**
  * Semaphore可以控同时访问的线程个数，通过 acquire() 获取一个许可，如果没有就等待，而 release() 释放一个许可。
  */
-public class Test {
+public class SemaphoreDemo {
     public static void main(String[] args) {
         int N = 8;            //工人数
         Semaphore semaphore = new Semaphore(5); //机器数目
