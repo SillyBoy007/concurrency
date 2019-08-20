@@ -10,8 +10,8 @@ public class CallableFeatureTask {
     public static void main(String[] args) {
         //第一种方式
         ExecutorService executor = Executors.newCachedThreadPool();
-        Task task = new Task();
-        FutureTask<Integer> futureTask = new FutureTask<Integer>(task);
+        Task1 task1 = new Task1();
+        FutureTask<Integer> futureTask = new FutureTask<Integer>(task1);
         executor.submit(futureTask);
         executor.shutdown();
 
